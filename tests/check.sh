@@ -1,0 +1,1 @@
+#!/usr/bin/env bash # My first test. It passes only if the FIRST line of README.md is a title starting with "# ". first=$(head -n 1 README.md) if [[ "$first" == "# "* ]]; then echo "✅ README has a title: $first" else echo "❌ The first line of README.md must start with # and a space. It is: $first" exit 1 fi
